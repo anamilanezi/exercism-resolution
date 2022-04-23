@@ -1,14 +1,6 @@
-<style>
-    h2 {
-        text-align: center;
-        font-weight: bold;
-        color: #604FCD;
-    }
-</style>
+<h2 align="center" style="color:#604FCD"> E X E R C I S M {ᵔᵕᵔ} S O L U T I O N S </h2>
 
-<h2 style=""> E X E R C I S M {ᵔᵕᵔ} S O L U T I O N S </h2>
-
-<p>Here I'll publish my solutions for the exercises provided on Exercism's platform while practice using and maintaining my GitHub. Exercism is an online, open-source, free coding platform created by Katrina Owen that offers many learning tracks on different programming languages. It's being really helpful on my practices since it uses real life situations, offer a brief explanation of concepts and gives instant feedback on our resolutions. </p>
+<p align="justify">Here I'll publish my solutions for the exercises provided on Exercism's platform while practice using and maintaining my GitHub. Exercism is an online, open-source, free coding platform created by Katrina Owen that offers many learning tracks on different programming languages. It's being really helpful on my practices since it uses real life situations, offer a brief explanation of concepts and gives instant feedback on our resolutions. </p>
 
 <h3 align="center">JavaScript Track</h3><hr>
 <ul>
