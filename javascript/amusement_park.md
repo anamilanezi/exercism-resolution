@@ -16,6 +16,14 @@ Write a function `createVisitor` that accepts three arguments.
 The function should return an object that holds this information. The keys in the object should be called `name`, `age` and `ticketId`.
 
 ```swift
+function createVisitor(name, age, ticketId) {
+  var visitor  = {
+    'name': name,
+    'age': age,
+    'ticketId': ticketId
+  }   return visitor;
+}
+
 createVisitor('Verena Nardi', 45, 'H32AZ123');
 // => { name: 'Verena Nardi', age: 45, ticketId: 'H32AZ123' }
 ```
@@ -25,6 +33,11 @@ When people leave the amusement park, their ticket gets revoked. If they come ba
 
 That means when a visitor leaves the park, only their ticket should be invalidated but the rest of the visitor object should stay the same. Implement the function `revokeTicket` that accepts a visitor object, sets the ticket identifier to `null` and returns the object afterwards.
 ```swift
+function revokeTicket(visitor) {
+  visitor['ticketId'] = null;
+  return visitor;
+}
+
 const visitor = {
   name: 'Verena Nardi',
   age: 45,
@@ -46,6 +59,16 @@ Implement a function `ticketStatus` that accepts the tracking object and a ticke
 - `'sold to {name}'` where {name} is the name of the visitor if the ticket was sold
 
 ```swift
+function ticketStatus(tickets, ticketId) {
+  if(tickets[ticketId] === null) {
+    return 'not sold';
+  } else if(tickets[ticketId] === undefined) {
+    return 'unknown ticket id';
+  } else {
+    return 'sold to ' + tickets[ticketId];
+  }
+}
+
 const tickets = {
   '0H2AZ123': null,
   '23LA9T41': 'Verena Nardi',
@@ -89,6 +112,13 @@ Due to new legal requirements, newly created visitor objects now also contain de
 The cashiers of the amusement park now need to check whether a visitor needs to sign a new version of the GTC. For this, implement a function `gtcVersion` that accepts a visitor object as an argument and returns the GTC version if it is available. If the version information is not available, nothing should be returned.
 
 ```swift
+function gtcVersion(visitor) {
+  if(visitor.hasOwnProperty('gtc')) {
+    return visitor['gtc']['version'];
+  } else {
+  return undefined; }
+}
+
 const visitorNew = {
   name: 'Verena Nardi',
   age: 45,
