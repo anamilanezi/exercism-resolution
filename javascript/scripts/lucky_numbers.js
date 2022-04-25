@@ -41,3 +41,14 @@ console.log(luckyNumber(123));          // false
 console.log(luckyNumber(1232112321));   // true
 
 // Generate an error message for invalid user input
+
+function errorMessage(input) {
+    var convertedNumber = Number(input);
+    if(input === '' || input === undefined || input === null) {
+        return 'Required field';
+    } else if (isNaN(convertedNumber) || convertedNumber === 0) {
+        return "Must be a number besides 0";
+    } else {
+    return '';
+    }
+}

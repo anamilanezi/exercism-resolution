@@ -15,4 +15,5 @@
     <li>🎡 <a href="https://github.com/anamilanezi/exercism-resolution/blob/main/javascript/amusement_park.md" >Amusement Park</a> - Null and undefined</li>
     <li>👾<a href="https://github.com/anamilanezi/exercism-resolution/blob/main/javascript/high_score_board.md" >High Score Board</a> - Objects</li>
     <li>🔢 <a href="https://github.com/anamilanezi/exercism-resolution/blob/main/javascript/lucky_numbers.md">Lucky Numbers</a> - Type conversion</li>
+    <li>👩‍🍳 <a href="https://github.com/anamilanezi/exercism-resolution/blob/main/javascript/lasagna_master">Lasagna Master</a> - Functions
 </ul>

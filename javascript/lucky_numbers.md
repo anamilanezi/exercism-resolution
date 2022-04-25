@@ -56,6 +56,17 @@ Here is some more information on how the value of an input field is provided.
 
 Write a function `errorMessage` that accepts the user input as a parameter. If the user did not provide any input, `errorMessage` should return `'Required field'`. If the input does not represent a non-zero number (according to the JavaScript conversion rules), `'Must be a number besides 0'` should be returned. In all other cases, you can assume the input is valid, the return value should be an empty string.
 ```swift
+function errorMessage(input) {
+  var convertedNumber = Number(input);
+  if(input === '' || input === undefined || input === null) {
+    return 'Required field';
+  } else if (isNaN(convertedNumber) || convertedNumber === 0) {
+    return "Must be a number besides 0";
+  } else {
+    return '';
+  }
+}
+
 errorMessage('123');
 // => ''
 
